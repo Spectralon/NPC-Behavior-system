@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace CodeBase.Infrastructure.Services.Disposal
+namespace CodeBase.Services.General.Disposal
 {
     public class Disposer : IDisposer
     {

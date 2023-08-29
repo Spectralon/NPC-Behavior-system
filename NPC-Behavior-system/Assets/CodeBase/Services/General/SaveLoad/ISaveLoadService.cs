@@ -1,6 +1,6 @@
 using CodeBase.Data;
 
-namespace CodeBase.Infrastructure.Services.SaveLoad
+namespace CodeBase.Services.General.SaveLoad
 {
     public interface ISaveLoadService
     {

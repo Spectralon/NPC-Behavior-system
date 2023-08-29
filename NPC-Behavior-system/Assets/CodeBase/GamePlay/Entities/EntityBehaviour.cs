@@ -1,6 +1,7 @@
+using CodeBase.StaticData.Entities;
 using UnityEngine;
 
-namespace CodeBase.CompositionRoot
+namespace CodeBase.GamePlay.Entities
 {
     public class EntityBehaviour : MonoBehaviour, IEntity
     {

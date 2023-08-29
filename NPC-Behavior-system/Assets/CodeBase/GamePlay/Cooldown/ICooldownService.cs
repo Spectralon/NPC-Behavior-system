@@ -1,4 +1,4 @@
-namespace CodeBase.CompositionRoot
+namespace CodeBase.GamePlay.Cooldown
 {
     public interface ICooldownService
     {

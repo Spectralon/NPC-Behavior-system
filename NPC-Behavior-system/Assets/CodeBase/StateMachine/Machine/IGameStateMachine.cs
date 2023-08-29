@@ -1,6 +1,6 @@
-using CodeBase.Infrastructure.StateMachines.States;
+using CodeBase.StateMachine.States;
 
-namespace CodeBase.Infrastructure.StateMachines.Machines
+namespace CodeBase.StateMachine.Machine
 {
     public interface IGameStateMachine
     {

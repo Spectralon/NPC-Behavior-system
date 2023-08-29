@@ -1,6 +1,6 @@
 using CodeBase.Data;
 
-namespace CodeBase.Infrastructure.Services.Progress.Watchers
+namespace CodeBase.Services.General.Progress.Watchers
 {
     public interface IProgressWriter : IProgressReader
     {

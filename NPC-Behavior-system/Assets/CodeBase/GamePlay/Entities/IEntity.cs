@@ -1,4 +1,6 @@
-namespace CodeBase.CompositionRoot
+using CodeBase.StaticData.Entities;
+
+namespace CodeBase.GamePlay.Entities
 {
     public interface IEntity
     {

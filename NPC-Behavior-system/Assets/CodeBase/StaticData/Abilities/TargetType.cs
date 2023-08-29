@@ -1,4 +1,4 @@
-namespace CodeBase.CompositionRoot
+namespace CodeBase.StaticData.Abilities
 {
     public enum TargetType
     {

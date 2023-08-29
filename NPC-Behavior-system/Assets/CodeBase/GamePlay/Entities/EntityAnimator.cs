@@ -1,7 +1,7 @@
 using CodeBase.Extensions;
 using UnityEngine;
 
-namespace CodeBase.CompositionRoot
+namespace CodeBase.GamePlay.Entities
 {
     public class EntityAnimator : MonoBehaviour
     {

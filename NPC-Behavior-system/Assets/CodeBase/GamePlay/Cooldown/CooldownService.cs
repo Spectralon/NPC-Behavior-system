@@ -1,4 +1,7 @@
-namespace CodeBase.CompositionRoot
+using CodeBase.GamePlay.Entities;
+using CodeBase.GamePlay.EntitiesRegistarion;
+
+namespace CodeBase.GamePlay.Cooldown
 {
     public class CooldownService : ICooldownService
     {

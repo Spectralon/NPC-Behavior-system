@@ -1,17 +1,17 @@
 using CodeBase.CompositionRoot.SubContainers;
-using CodeBase.Infrastructure.Services.Ads;
-using CodeBase.Infrastructure.Services.CustomLogger;
-using CodeBase.Infrastructure.Services.Disposal;
-using CodeBase.Infrastructure.Services.Input;
-using CodeBase.Infrastructure.Services.Progress.Generator;
-using CodeBase.Infrastructure.Services.Progress.Registration;
-using CodeBase.Infrastructure.Services.Progress.Service;
-using CodeBase.Infrastructure.Services.Randomizer;
-using CodeBase.Infrastructure.Services.SaveLoad;
-using CodeBase.Infrastructure.Services.StaticData;
+using CodeBase.Services.General.Ads;
+using CodeBase.Services.General.CustomLogger;
+using CodeBase.Services.General.Disposal;
+using CodeBase.Services.General.Input;
+using CodeBase.Services.General.Progress.Generator;
+using CodeBase.Services.General.Progress.Registration;
+using CodeBase.Services.General.Progress.Service;
+using CodeBase.Services.General.Randomizer;
+using CodeBase.Services.General.SaveLoad;
+using CodeBase.Services.General.StaticData;
 using Zenject;
 
-namespace CodeBase.CompositionRoot.MonoInstallers
+namespace CodeBase.CompositionRoot
 {
     public class ServicesInstaller : MonoInstaller
     {

@@ -1,4 +1,4 @@
-namespace CodeBase.Infrastructure.StateMachines.States
+namespace CodeBase.StateMachine.States
 {
     public interface IPayloadState<TPayload> : IExitState
     { 

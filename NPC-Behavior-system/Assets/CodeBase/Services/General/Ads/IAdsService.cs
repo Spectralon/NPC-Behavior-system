@@ -1,4 +1,4 @@
-namespace CodeBase.Infrastructure.Services.Ads
+namespace CodeBase.Services.General.Ads
 {
     public interface IAdsService
     {

@@ -1,9 +1,10 @@
 using CodeBase.CompositionRoot.SubContainers;
-using CodeBase.Infrastructure.Foundation.CoroutineAccess;
-using CodeBase.Infrastructure.Foundation.Curtain;
-using CodeBase.Infrastructure.Foundation.Loader;
-using CodeBase.Infrastructure.StateMachines.GameStates;
-using CodeBase.Infrastructure.StateMachines.Machines;
+using CodeBase.GamePlay.Cooldown;
+using CodeBase.Infrastructure.CoroutineAccess;
+using CodeBase.Infrastructure.Curtain;
+using CodeBase.Infrastructure.Loader;
+using CodeBase.StateMachine.GameStates;
+using CodeBase.StateMachine.Machine;
 using CodeBase.StaticData;
 using Zenject;
 

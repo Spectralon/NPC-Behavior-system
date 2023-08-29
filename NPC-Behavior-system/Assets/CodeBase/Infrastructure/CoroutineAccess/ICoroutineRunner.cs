@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace CodeBase.Infrastructure.Foundation.CoroutineAccess
+namespace CodeBase.Infrastructure.CoroutineAccess
 {
     public interface ICoroutineRunner
     {

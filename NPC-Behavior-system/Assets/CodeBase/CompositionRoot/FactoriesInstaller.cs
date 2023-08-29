@@ -1,5 +1,5 @@
-using CodeBase.Infrastructure.ResourceLoad;
-using CodeBase.Infrastructure.Services.Factory;
+using CodeBase.Services.GamePlay.Factory;
+using CodeBase.Services.GamePlay.ResourceLoad;
 using CodeBase.UI.Services.Factory;
 using Zenject;
 

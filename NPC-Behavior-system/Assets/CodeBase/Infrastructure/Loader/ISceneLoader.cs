@@ -1,6 +1,6 @@
 using System;
 
-namespace CodeBase.Infrastructure.Foundation.Loader
+namespace CodeBase.Infrastructure.Loader
 {
     public interface ISceneLoader
     {

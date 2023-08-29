@@ -1,6 +1,6 @@
 using System;
 
-namespace CodeBase.Infrastructure.Services.Disposal
+namespace CodeBase.Services.General.Disposal
 {
     public interface IDisposer
     {

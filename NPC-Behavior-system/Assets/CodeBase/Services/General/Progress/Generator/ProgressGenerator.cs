@@ -1,6 +1,6 @@
 using CodeBase.Data;
 
-namespace CodeBase.Infrastructure.Services.Progress.Generator
+namespace CodeBase.Services.General.Progress.Generator
 {
     public class ProgressGenerator : IProgressGenerator
     { 

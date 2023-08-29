@@ -1,7 +1,9 @@
 using CodeBase.Extensions;
+using CodeBase.StaticData.Abilities;
+using CodeBase.StaticData.Entities;
 using UnityEngine;
 
-namespace CodeBase.CompositionRoot
+namespace CodeBase.GamePlay.Entities
 {
     public class AbilityState
     {

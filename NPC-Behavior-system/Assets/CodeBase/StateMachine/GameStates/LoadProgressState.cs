@@ -1,15 +1,15 @@
 using CodeBase.Data;
-using CodeBase.Infrastructure.Services.CustomLogger;
-using CodeBase.Infrastructure.Services.Progress.Generator;
-using CodeBase.Infrastructure.Services.Progress.Service;
-using CodeBase.Infrastructure.Services.SaveLoad;
-using CodeBase.Infrastructure.StateMachines.Machines;
-using CodeBase.Infrastructure.StateMachines.States;
+using CodeBase.Services.General.CustomLogger;
+using CodeBase.Services.General.Progress.Generator;
+using CodeBase.Services.General.Progress.Service;
+using CodeBase.Services.General.SaveLoad;
+using CodeBase.StateMachine.Machine;
+using CodeBase.StateMachine.States;
 using CodeBase.StaticData;
 using UnityEngine.SceneManagement;
 using Zenject;
 
-namespace CodeBase.Infrastructure.StateMachines.GameStates
+namespace CodeBase.StateMachine.GameStates
 {
     public class LoadProgressState : IState
     {

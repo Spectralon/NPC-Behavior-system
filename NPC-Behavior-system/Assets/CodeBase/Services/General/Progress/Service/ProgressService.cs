@@ -1,6 +1,6 @@
 using CodeBase.Data;
 
-namespace CodeBase.Infrastructure.Services.Progress.Service
+namespace CodeBase.Services.General.Progress.Service
 {
     public class ProgressService : IProgressService
     {

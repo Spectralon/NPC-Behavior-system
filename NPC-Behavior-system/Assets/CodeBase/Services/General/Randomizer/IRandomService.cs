@@ -1,4 +1,4 @@
-namespace CodeBase.Infrastructure.Services.Randomizer
+namespace CodeBase.Services.General.Randomizer
 {
     public interface IRandomService
     {

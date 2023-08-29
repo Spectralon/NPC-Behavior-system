@@ -1,12 +1,12 @@
 using System;
 using CodeBase.Data;
-using CodeBase.Infrastructure.Services.Progress.Registration;
-using CodeBase.Infrastructure.Services.Progress.Service;
-using CodeBase.Infrastructure.Services.Progress.Watchers;
+using CodeBase.Services.General.Progress.Registration;
+using CodeBase.Services.General.Progress.Service;
+using CodeBase.Services.General.Progress.Watchers;
 using UnityEngine;
-using ILogger = CodeBase.Infrastructure.Services.CustomLogger.ILogger;
+using ILogger = CodeBase.Services.General.CustomLogger.ILogger;
 
-namespace CodeBase.Infrastructure.Services.SaveLoad
+namespace CodeBase.Services.General.SaveLoad
 {
     public class SaveLoadService : ISaveLoadService
     {

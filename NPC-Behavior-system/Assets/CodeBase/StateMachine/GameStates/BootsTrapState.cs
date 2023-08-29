@@ -1,12 +1,12 @@
-using CodeBase.Infrastructure.Foundation.Loader;
-using CodeBase.Infrastructure.StateMachines.Machines;
-using CodeBase.Infrastructure.StateMachines.States;
+using CodeBase.Infrastructure.Loader;
+using CodeBase.StateMachine.Machine;
+using CodeBase.StateMachine.States;
 using CodeBase.StaticData;
 using UnityEngine.SceneManagement;
 using Zenject;
-using ILogger = CodeBase.Infrastructure.Services.CustomLogger.ILogger;
+using ILogger = CodeBase.Services.General.CustomLogger.ILogger;
 
-namespace CodeBase.Infrastructure.StateMachines.GameStates
+namespace CodeBase.StateMachine.GameStates
 {
     public class BootstrapState : IState
     {

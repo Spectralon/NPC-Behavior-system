@@ -1,14 +1,14 @@
-using CodeBase.Infrastructure.Foundation.Curtain;
-using CodeBase.Infrastructure.Foundation.Loader;
-using CodeBase.Infrastructure.Services.Factory;
-using CodeBase.Infrastructure.Services.Progress.Service;
-using CodeBase.Infrastructure.StateMachines.Machines;
-using CodeBase.Infrastructure.StateMachines.States;
+using CodeBase.Infrastructure.Curtain;
+using CodeBase.Infrastructure.Loader;
+using CodeBase.Services.GamePlay.Factory;
+using CodeBase.Services.General.Progress.Service;
+using CodeBase.StateMachine.Machine;
+using CodeBase.StateMachine.States;
 using UnityEngine.SceneManagement;
 using Zenject;
-using ILogger = CodeBase.Infrastructure.Services.CustomLogger.ILogger;
+using ILogger = CodeBase.Services.General.CustomLogger.ILogger;
 
-namespace CodeBase.Infrastructure.StateMachines.GameStates
+namespace CodeBase.StateMachine.GameStates
 {
     public class LoadSceneState : IPayloadState<string>
     {

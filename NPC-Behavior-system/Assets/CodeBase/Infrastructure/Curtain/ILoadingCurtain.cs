@@ -1,4 +1,4 @@
-namespace CodeBase.Infrastructure.Foundation.Curtain
+namespace CodeBase.Infrastructure.Curtain
 {
     public interface ILoadingCurtain
     {

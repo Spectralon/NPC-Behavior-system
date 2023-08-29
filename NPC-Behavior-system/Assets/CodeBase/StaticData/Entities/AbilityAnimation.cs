@@ -1,6 +1,6 @@
 using System;
 
-namespace CodeBase.CompositionRoot
+namespace CodeBase.StaticData.Entities
 {
     [Serializable]
     public class AbilityAnimation

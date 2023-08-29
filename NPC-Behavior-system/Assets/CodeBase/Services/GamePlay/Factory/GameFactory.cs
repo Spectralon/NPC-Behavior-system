@@ -1,9 +1,9 @@
-using CodeBase.Infrastructure.ResourceLoad;
-using CodeBase.Infrastructure.Services.Progress.Registration;
-using CodeBase.Infrastructure.Services.Progress.Service;
+using CodeBase.Services.GamePlay.ResourceLoad;
+using CodeBase.Services.General.Progress.Registration;
+using CodeBase.Services.General.Progress.Service;
 using Zenject;
 
-namespace CodeBase.Infrastructure.Services.Factory
+namespace CodeBase.Services.GamePlay.Factory
 {
     public class GameFactory : IGameFactory
     {

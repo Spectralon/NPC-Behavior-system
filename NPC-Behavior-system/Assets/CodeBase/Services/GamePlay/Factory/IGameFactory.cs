@@ -1,6 +1,4 @@
-using UnityEngine;
-
-namespace CodeBase.Infrastructure.Services.Factory
+namespace CodeBase.Services.GamePlay.Factory
 {
     public interface IGameFactory
     {

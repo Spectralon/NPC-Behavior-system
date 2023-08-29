@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CodeBase.Infrastructure.ResourceLoad
+namespace CodeBase.Services.GamePlay.ResourceLoad
 {
     public interface IResourceLoader
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace CodeBase.CompositionRoot
+namespace CodeBase.GamePlay.Entities
 {
     public class EntityState
     {

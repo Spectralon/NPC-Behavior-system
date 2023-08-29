@@ -1,5 +1,5 @@
-using CodeBase.Infrastructure.StateMachines.GameStates;
-using CodeBase.Infrastructure.StateMachines.Machines;
+using CodeBase.StateMachine.GameStates;
+using CodeBase.StateMachine.Machine;
 using Zenject;
 
 namespace CodeBase.CompositionRoot.SubContainers

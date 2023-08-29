@@ -1,7 +1,8 @@
 using System;
+using CodeBase.StaticData.Abilities;
 using UnityEngine;
 
-namespace CodeBase.CompositionRoot
+namespace CodeBase.StaticData.Entities
 {
     [Serializable]
     public class EntityAbility
