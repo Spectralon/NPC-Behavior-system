@@ -22,6 +22,16 @@ namespace CodeBase.CompositionRoot
             BindLoadingCurtain();
 
             BindGlobalStateMachine();
+
+            BindCoolDownService();
+        }
+
+        private void BindCoolDownService()
+        {
+            Container
+                .Bind<ICooldownService>()
+                .To<CooldownService>()
+                .AsSingle();
         }
 
 
