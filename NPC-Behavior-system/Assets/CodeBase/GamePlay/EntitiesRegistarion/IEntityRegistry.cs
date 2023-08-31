@@ -3,7 +3,7 @@ using CodeBase.GamePlay.Entities;
 
 namespace CodeBase.GamePlay.EntitiesRegistarion
 {
-    public interface IEntitiesRegistration
+    public interface IEntityRegistry
     {
         List<string> FirstTeam { get; }
         List<string> SecondTeam { get; }

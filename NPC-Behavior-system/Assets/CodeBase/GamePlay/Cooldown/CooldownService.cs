@@ -5,14 +5,14 @@ namespace CodeBase.GamePlay.Cooldown
 {
     public class CooldownService : ICooldownService
     {
-        private readonly IEntitiesRegistration _entitiesRegistration;
+        private readonly IEntityRegistry _entityRegistry;
         
-        public CooldownService(IEntitiesRegistration entitiesRegistration) => 
-            _entitiesRegistration = entitiesRegistration;
+        public CooldownService(IEntityRegistry entityRegistry) => 
+            _entityRegistry = entityRegistry;
 
         public void CooldownTick(float deltaTime)
         {
-            foreach (EntityBehaviour entity in _entitiesRegistration.AllActiveEntities())
+            foreach (EntityBehaviour entity in _entityRegistry.AllActiveEntities())
             foreach (AbilityState skillState in entity.State.SkillStates)
                 skillState.TickCooldown(deltaTime);
         }

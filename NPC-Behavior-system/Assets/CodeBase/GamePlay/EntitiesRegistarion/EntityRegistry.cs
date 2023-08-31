@@ -4,7 +4,7 @@ using CodeBase.GamePlay.Entities;
 
 namespace CodeBase.GamePlay.EntitiesRegistarion
 {
-    public class EntitiesRegistration : IEntitiesRegistration
+    public class EntityRegistry : IEntityRegistry
     {
         public List<string> FirstTeam { get; } = new();
         public List<string> SecondTeam { get; } = new();

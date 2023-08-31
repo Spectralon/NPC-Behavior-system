@@ -1,4 +1,5 @@
 using CodeBase.CompositionRoot.SubContainers;
+using CodeBase.GamePlay.Battle;
 using CodeBase.GamePlay.Cooldown;
 using CodeBase.Infrastructure.CoroutineAccess;
 using CodeBase.Infrastructure.Curtain;
@@ -25,6 +26,15 @@ namespace CodeBase.CompositionRoot
             BindGlobalStateMachine();
 
             BindCoolDownService();
+
+            BindCombatConductor();
+        }
+
+        private void BindCombatConductor()
+        {
+            Container
+                .BindInterfacesTo<CombatConductor>()
+                .AsSingle();
         }
 
         private void BindCoolDownService()
