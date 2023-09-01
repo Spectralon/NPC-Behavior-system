@@ -1,4 +1,4 @@
-namespace CodeBase.GamePlay.Battle
+namespace CodeBase.GamePlay.Abilities.Solver
 {
     public interface IAbilitySolver
     {

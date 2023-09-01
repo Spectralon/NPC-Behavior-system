@@ -1,20 +1,21 @@
 using System.Collections.Generic;
+using CodeBase.GamePlay.Battle;
 using CodeBase.GamePlay.Entities;
 using CodeBase.GamePlay.EntitiesRegistarion;
+using CodeBase.GamePlay.UI.Text;
 using CodeBase.Services.General.StaticData;
 using CodeBase.StaticData.Abilities;
 using CodeBase.StaticData.Entities;
 using UnityEngine;
 using Zenject;
-using Color = System.Drawing.Color;
 
-namespace CodeBase.GamePlay.Battle
+namespace CodeBase.GamePlay.Abilities.Solver
 {
     public class AbilitySolver : IAbilitySolver, IInitializable
     {
         private readonly IStaticDataService _staticDataService;
         private readonly IEntityRegistry _entityRegistry;
-        //private readonly IBattleTextEntity _battleTextEntity;
+        private readonly ICombatTextEntity _combatTextEntity;
         private readonly List<ActiveAbility> _activeAbilities = new(16);
 
         private List<IAbilityApplier> _appliers;
@@ -62,7 +63,7 @@ namespace CodeBase.GamePlay.Battle
         public float CalculateAbilityValue(string casterId, AbilityTypeId abilityTypeId, string targetId)
         {
             EntityBehaviour caster = _entityRegistry.GetEntity(casterId);
-            AbilityType type = _staticDataService.HeroSkillFor(abilityTypeId, caster.TypeId).Kind;
+            AbilityType type = _staticDataService.EntityAbilityFor(abilityTypeId, caster.TypeId).Type;
       
             return _appliers.Find(applier => applier.AbilityType == type)
                 .CalculateAbilityValue(casterId, abilityTypeId, targetId);
@@ -88,11 +89,11 @@ namespace CodeBase.GamePlay.Battle
         {
             EntityBehaviour caster = _entityRegistry.GetEntity(casterId);
 
-            _battleTextEntity.PlayText(SkillName(), Color.Gold, caster.transform.position);
+            _combatTextEntity.PlayText(SkillName(), Color.yellow, caster.transform.position);
 
             string SkillName()
             {
-                return _staticDataService.HeroSkillFor(abilityTypeId, caster.TypeId).Name;
+                return _staticDataService.EntityAbilityFor(abilityTypeId, caster.TypeId).Name;
             }
         }
 
@@ -106,16 +107,16 @@ namespace CodeBase.GamePlay.Battle
         }
 
         private EntityAbility Ability(EntityAction entityAction) =>
-            _staticDataService.HeroConfigFor(entityAction.Caster.TypeId)
-                .Skills.Find(x => x.TypeId == entityAction.Ability);
+            _staticDataService.EntityConfigFor(entityAction.Caster.TypeId)
+                .Abilities.Find(x => x.TypeId == entityAction.Ability);
 
         private void InitAbilityAppliers()
         {
             _appliers = new List<IAbilityApplier>
             {
-                new HealApplier(_staticDataService, _entityRegistry, _battleTextEntity),
-                new DamageApplier(_staticDataService, _entityRegistry, _battleTextEntity),
-                new StaminaBurnApplier(_staticDataService, _entityRegistry, _battleTextEntity),
+                new HealApplier(_staticDataService, _entityRegistry, _combatTextEntity),
+                new DamageApplier(_staticDataService, _entityRegistry, _combatTextEntity),
+                new StaminaBurnApplier(_staticDataService, _entityRegistry, _combatTextEntity),
             };
         }
     }

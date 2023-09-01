@@ -6,6 +6,6 @@ namespace CodeBase.StaticData.Abilities
         Damage = 1,
         Heal = 2,
         MagicalDamage = 3,
-        InitiativeBurn = 4,
+        StaminaBurn = 4,
     }
 }
