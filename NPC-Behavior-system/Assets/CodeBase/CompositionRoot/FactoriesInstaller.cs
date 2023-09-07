@@ -1,3 +1,4 @@
+using CodeBase.GamePlay.Factorys.EntityFactory;
 using CodeBase.Services.GamePlay.Factory;
 using CodeBase.Services.GamePlay.ResourceLoad;
 using CodeBase.UI.Services.Factory;
@@ -9,11 +10,21 @@ namespace CodeBase.CompositionRoot
     {
         public override void InstallBindings()
         {
+            BindEntityFactory();
+            
             BindResourceLoader();
 
             BindGameFactory();
             
             BindUIFactory();
+        }
+
+        private void BindEntityFactory()
+        {
+            Container
+                .Bind<IEntityFactory>()
+                .To<EntityFactory>()
+                .AsSingle();
         }
 
         private void BindResourceLoader()
