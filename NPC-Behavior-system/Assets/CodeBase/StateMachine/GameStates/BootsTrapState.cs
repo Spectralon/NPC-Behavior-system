@@ -1,4 +1,5 @@
 using CodeBase.Infrastructure.Loader;
+using CodeBase.Services.General.StaticData;
 using CodeBase.StateMachine.Machine;
 using CodeBase.StateMachine.States;
 using CodeBase.StaticData;
@@ -13,14 +14,17 @@ namespace CodeBase.StateMachine.GameStates
         private readonly IGameStateMachine _stateMachine;
         private readonly ILogger _logger;
         private readonly ISceneLoader _sceneLoader;
+        private readonly IStaticDataService _staticDataService;
 
         public BootstrapState(IGameStateMachine stateMachine, 
             ILogger logger,
-            ISceneLoader sceneLoader)
+            ISceneLoader sceneLoader,
+            IStaticDataService staticDataService)
         {
             _stateMachine = stateMachine;
             _logger = logger;
             _sceneLoader = sceneLoader;
+            _staticDataService = staticDataService;
         }
 
         public void Enter()
@@ -33,7 +37,7 @@ namespace CodeBase.StateMachine.GameStates
 
         private void InitServices()
         {
- 
+            _staticDataService.LoadEntityConfigs();
         }
 
         private void EnterLoadLevel() =>

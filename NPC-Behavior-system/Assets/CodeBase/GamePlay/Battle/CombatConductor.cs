@@ -21,7 +21,7 @@ namespace CodeBase.GamePlay.Battle
         private readonly IDeathService _deathService;
         private readonly IStaminaService _staminaService;
         private readonly ICooldownService _cooldownService;
-        private readonly IAbilitySolver _skillSolver;
+        private readonly IAbilitySolver _abilitySolver;
         private readonly IArtificialIntelligence _ai;
    
         private float _untilNextTurnTick;
@@ -39,10 +39,10 @@ namespace CodeBase.GamePlay.Battle
             IStaminaService staminaService,
             IArtificialIntelligence ai,
             ICooldownService cooldownService,
-            IAbilitySolver skillSolver)
+            IAbilitySolver abilitySolver)
         {
             _ai = ai;
-            _skillSolver = skillSolver;
+            _abilitySolver = abilitySolver;
             _entityRegistry = entityRegistry;
             _deathService = deathService;
             _deathService = deathService;
@@ -56,7 +56,7 @@ namespace CodeBase.GamePlay.Battle
           return;
         
         UpdateTurnTimer();
-        _skillSolver.SkillDelaysTick();
+        _abilitySolver.AbilityDelaysTick();
         _deathService.ProcessDeadHeroes();
         CheckBattleEnd(); 
         }
@@ -118,11 +118,11 @@ namespace CodeBase.GamePlay.Battle
 
         private void PerformEntityAction(EntityBehaviour readyEntity)
         {
-          EntityAction heroAction = _ai.MakeBestDecision(readyEntity);
+          EntityAction entityAction = _ai.MakeBestDecision(readyEntity);
 
-          _skillSolver.ProcessHeroAction(heroAction);
+          _abilitySolver.ProcessEntityAction(entityAction);
           
-          EntityActionProduced?.Invoke(heroAction);
+          EntityActionProduced?.Invoke(entityAction);
         }
 
         private AbilityTypeId TempSkill(EntityBehaviour readyEntity) => 

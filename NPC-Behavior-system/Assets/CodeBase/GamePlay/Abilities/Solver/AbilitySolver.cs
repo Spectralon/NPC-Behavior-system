@@ -35,7 +35,7 @@ namespace CodeBase.GamePlay.Abilities.Solver
                 skillApplier.WarmUp();
         }
 
-        public void ProcessHeroAction(EntityAction entityAction)
+        public void ProcessEntityAction(EntityAction entityAction)
         {
             EntityAbility ability = Ability(entityAction);
 

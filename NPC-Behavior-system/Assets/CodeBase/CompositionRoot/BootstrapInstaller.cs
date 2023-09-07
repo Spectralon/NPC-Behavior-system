@@ -1,4 +1,5 @@
 using CodeBase.CompositionRoot.SubContainers;
+using CodeBase.GamePlay.Abilities.Solver;
 using CodeBase.GamePlay.Battle;
 using CodeBase.GamePlay.Cooldown;
 using CodeBase.Infrastructure.CoroutineAccess;
@@ -28,6 +29,21 @@ namespace CodeBase.CompositionRoot
             BindCoolDownService();
 
             BindCombatConductor();
+
+            BindAbilitySolver();
+        }
+
+        public void Initialize()
+        {
+            var stateMachine = Container.Resolve<IGameStateMachine>();
+            stateMachine.Enter<BootstrapState>();
+        }
+
+        private void BindAbilitySolver()
+        {
+            Container
+                .BindInterfacesTo<AbilitySolver>()
+                .AsSingle();
         }
 
         private void BindCombatConductor()
@@ -45,12 +61,6 @@ namespace CodeBase.CompositionRoot
                 .AsSingle();
         }
 
-
-        public void Initialize()
-        {
-            var stateMachine = Container.Resolve<IGameStateMachine>();
-            stateMachine.Enter<BootstrapState>();
-        }
 
         private void BindSelf()
         {
