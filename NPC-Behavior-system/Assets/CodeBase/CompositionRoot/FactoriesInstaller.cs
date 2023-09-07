@@ -1,3 +1,5 @@
+using CodeBase.GamePlay.AI.Reporter;
+using CodeBase.GamePlay.EntitiesRegistarion;
 using CodeBase.GamePlay.Factorys.EntityFactory;
 using CodeBase.Services.GamePlay.Factory;
 using CodeBase.Services.GamePlay.ResourceLoad;
@@ -10,13 +12,33 @@ namespace CodeBase.CompositionRoot
     {
         public override void InstallBindings()
         {
+            BindResourceLoader();
+            
             BindEntityFactory();
             
-            BindResourceLoader();
+            BindEntityRegistry();
+
+            BindAIReporter();
 
             BindGameFactory();
             
             BindUIFactory();
+        }
+
+        private void BindAIReporter()
+        {
+            Container
+                .Bind<IAIReporter>()
+                .To<AIReporter>()
+                .AsSingle();
+        }
+
+        private void BindEntityRegistry()
+        {
+            Container
+                .Bind<IEntityRegistry>()
+                .To<EntityRegistry>()
+                .AsSingle();
         }
 
         private void BindEntityFactory()
