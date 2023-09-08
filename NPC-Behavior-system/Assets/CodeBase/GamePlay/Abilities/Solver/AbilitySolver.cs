@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using CodeBase.GamePlay.Abilities.Appliers;
 using CodeBase.GamePlay.Battle;
 using CodeBase.GamePlay.Entities;
 using CodeBase.GamePlay.EntitiesRegistarion;

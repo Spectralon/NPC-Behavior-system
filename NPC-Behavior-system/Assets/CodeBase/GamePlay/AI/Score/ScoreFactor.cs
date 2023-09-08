@@ -1,4 +1,4 @@
-namespace CodeBase.GamePlay.AI.Reporter
+namespace CodeBase.GamePlay.AI.Score
 {
     public struct ScoreFactor
     {

@@ -1,6 +1,7 @@
+using CodeBase.GamePlay.Battle;
 using CodeBase.GamePlay.Entities;
 
-namespace CodeBase.GamePlay.Battle
+namespace CodeBase.GamePlay.AI
 {
     public interface IArtificialIntelligence
     {

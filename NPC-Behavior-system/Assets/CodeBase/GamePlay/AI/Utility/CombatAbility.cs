@@ -1,6 +1,6 @@
 using CodeBase.StaticData.Abilities;
 
-namespace CodeBase.GamePlay.AI.Reporter
+namespace CodeBase.GamePlay.AI.Utility
 {
     public class CombatAbility
     {

@@ -2,7 +2,7 @@ using CodeBase.GamePlay.Battle;
 using CodeBase.GamePlay.Entities;
 using CodeBase.StaticData.Entities;
 
-namespace CodeBase.GamePlay.Factorys.EntityFactory
+namespace CodeBase.GamePlay.Factories.EntityFactory
 {
     public interface IEntityFactory
     {

@@ -9,7 +9,7 @@ using CodeBase.StaticData.Entities;
 using Zenject;
 using Random = UnityEngine.Random;
 
-namespace CodeBase.GamePlay.Factorys.EntityFactory
+namespace CodeBase.GamePlay.Factories.EntityFactory
 {
     public class EntityFactory : IEntityFactory
     {

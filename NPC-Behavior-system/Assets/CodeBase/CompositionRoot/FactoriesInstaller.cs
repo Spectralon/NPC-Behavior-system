@@ -1,6 +1,9 @@
+using CodeBase.GamePlay.Abilities.Targeting;
 using CodeBase.GamePlay.AI.Reporter;
+using CodeBase.GamePlay.Death;
 using CodeBase.GamePlay.EntitiesRegistarion;
-using CodeBase.GamePlay.Factorys.EntityFactory;
+using CodeBase.GamePlay.Factories.EntityFactory;
+using CodeBase.GamePlay.Stamina;
 using CodeBase.Services.GamePlay.Factory;
 using CodeBase.Services.GamePlay.ResourceLoad;
 using CodeBase.UI.Services.Factory;
@@ -20,9 +23,39 @@ namespace CodeBase.CompositionRoot
 
             BindAIReporter();
 
+            BindDeathService();
+
+            BindStaminaService();
+
+            BindTargetPicker();
+
             BindGameFactory();
             
             BindUIFactory();
+        }
+
+        private void BindTargetPicker()
+        {
+            Container
+                .Bind<ITargetPicker>()
+                .To<TargetPicker>()
+                .AsSingle();
+        }
+
+        private void BindStaminaService()
+        {
+            Container
+                .Bind<IStaminaService>()
+                .To<StaminaService>()
+                .AsSingle();
+        }
+
+        private void BindDeathService()
+        {
+            Container
+                .Bind<IDeathService>()
+                .To<DeathService>()
+                .AsSingle();
         }
 
         private void BindAIReporter()

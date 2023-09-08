@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using CodeBase.GamePlay.AI.Score;
+using CodeBase.GamePlay.AI.Utility;
 using CodeBase.GamePlay.Entities;
 
 namespace CodeBase.GamePlay.AI.Reporter

@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using CodeBase.GamePlay.AI.Score;
+using CodeBase.GamePlay.AI.Utility;
 using CodeBase.GamePlay.Entities;
 using CodeBase.GamePlay.EntitiesRegistarion;
 

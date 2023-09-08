@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using CodeBase.GamePlay.AI.Score;
 
 namespace CodeBase.GamePlay.AI.Reporter
 {

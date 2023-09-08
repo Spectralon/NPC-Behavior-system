@@ -1,10 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
+using CodeBase.GamePlay.AI.Utility;
 using CodeBase.GamePlay.Battle;
 using CodeBase.GamePlay.Entities;
 using CodeBase.StaticData.Abilities;
 
-namespace CodeBase.GamePlay.AI.Reporter
+namespace CodeBase.GamePlay.AI.Score
 {
     public class ScoredAction : EntityAction
     {

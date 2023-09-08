@@ -7,7 +7,7 @@ using CodeBase.StaticData.Abilities;
 using CodeBase.StaticData.Entities;
 using UnityEngine;
 
-namespace CodeBase.GamePlay.Abilities.Solver
+namespace CodeBase.GamePlay.Abilities.Appliers
 {
     public class HealApplier : IAbilityApplier
     {
