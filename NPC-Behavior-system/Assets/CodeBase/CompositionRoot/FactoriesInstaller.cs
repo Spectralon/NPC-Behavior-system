@@ -1,4 +1,5 @@
 using CodeBase.GamePlay.Abilities.Targeting;
+using CodeBase.GamePlay.AI;
 using CodeBase.GamePlay.AI.Reporter;
 using CodeBase.GamePlay.Death;
 using CodeBase.GamePlay.EntitiesRegistarion;
@@ -29,9 +30,19 @@ namespace CodeBase.CompositionRoot
 
             BindTargetPicker();
 
+            BindUtilityAI();
+
             BindGameFactory();
             
             BindUIFactory();
+        }
+
+        private void BindUtilityAI()
+        {
+            Container
+                .Bind<IArtificialIntelligence>()
+                .To<UtilityAI>()
+                .AsSingle();
         }
 
         private void BindTargetPicker()
