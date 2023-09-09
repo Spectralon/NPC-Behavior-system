@@ -1,6 +1,7 @@
 using CodeBase.GamePlay.Abilities.Targeting;
 using CodeBase.GamePlay.AI;
 using CodeBase.GamePlay.AI.Reporter;
+using CodeBase.GamePlay.AI.Utility;
 using CodeBase.GamePlay.Death;
 using CodeBase.GamePlay.EntitiesRegistarion;
 using CodeBase.GamePlay.Factories.EntityFactory;

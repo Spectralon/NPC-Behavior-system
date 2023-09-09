@@ -3,16 +3,14 @@ using System.Linq;
 using CodeBase.Extensions;
 using CodeBase.GamePlay.Abilities.Solver;
 using CodeBase.GamePlay.Abilities.Targeting;
-using CodeBase.GamePlay.AI;
 using CodeBase.GamePlay.AI.Reporter;
 using CodeBase.GamePlay.AI.Score;
-using CodeBase.GamePlay.AI.Utility;
 using CodeBase.GamePlay.Battle;
 using CodeBase.GamePlay.Entities;
 using CodeBase.GamePlay.EntitiesRegistarion;
 using CodeBase.Services.General.StaticData;
 
-namespace CodeBase.CompositionRoot
+namespace CodeBase.GamePlay.AI.Utility
 {
     public class UtilityAI : IArtificialIntelligence
     {
