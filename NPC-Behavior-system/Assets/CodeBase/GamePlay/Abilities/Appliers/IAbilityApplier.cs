@@ -1,6 +1,7 @@
+using CodeBase.GamePlay.Battle;
 using CodeBase.StaticData.Abilities;
 
-namespace CodeBase.GamePlay.Battle
+namespace CodeBase.GamePlay.Abilities.Appliers
 {
     public interface IAbilityApplier
     {

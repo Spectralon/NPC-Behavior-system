@@ -35,18 +35,18 @@ namespace CodeBase.GamePlay.Battle.Starter
 
         private void SetupFirstTeam(PlaceSetup placeSetup)
         {
-            foreach (Place slot in placeSetup.FirstTeamPlaces)
+            foreach (Place place in placeSetup.FirstTeamPlaces)
             {
-                EntityBehaviour entity = _entityFactory.CreateEntityAt(RandomHeroTypeId(), slot, slot.Turned);
+                EntityBehaviour entity = _entityFactory.CreateEntityAt(RandomHeroTypeId(), place, place.Turned);
                 _entityRegistry.RegisterFirstTeam(entity);
             }
         }
 
         private void SetupSecondTeam(PlaceSetup placeSetup)
         {
-            foreach (Place slot in placeSetup.SecondTeamPlaces)
+            foreach (Place place in placeSetup.SecondTeamPlaces)
             {
-                EntityBehaviour entity = _entityFactory.CreateEntityAt(RandomHeroTypeId(), slot, slot.Turned);
+                EntityBehaviour entity = _entityFactory.CreateEntityAt(RandomHeroTypeId(), place, place.Turned);
                 _entityRegistry.RegisterSecondTeam(entity);
             }
         }
