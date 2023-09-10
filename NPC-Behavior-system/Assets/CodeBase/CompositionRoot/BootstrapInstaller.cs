@@ -1,6 +1,7 @@
 using CodeBase.CompositionRoot.SubContainers;
 using CodeBase.GamePlay.Abilities.Solver;
 using CodeBase.GamePlay.Battle;
+using CodeBase.GamePlay.Battle.Conductor;
 using CodeBase.GamePlay.Cooldown;
 using CodeBase.Infrastructure.CoroutineAccess;
 using CodeBase.Infrastructure.Curtain;

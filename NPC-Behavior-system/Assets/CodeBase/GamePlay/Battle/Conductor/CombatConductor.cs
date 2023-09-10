@@ -12,9 +12,9 @@ using CodeBase.StaticData.Abilities;
 using UnityEngine;
 using Zenject;
 
-namespace CodeBase.GamePlay.Battle
+namespace CodeBase.GamePlay.Battle.Conductor
 {
-    public class CombatConductor : ITickable
+    public class CombatConductor : ICombatConductor, ITickable
     {
         private const float TurnTickDuration = 0.3f;
     

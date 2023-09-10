@@ -15,6 +15,5 @@ namespace CodeBase.GamePlay.AI.Utility
         {
             Add(new UtilityFunction(appliesTo, getInput, score, name));
         }
-
     }
 }
