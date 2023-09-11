@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using CodeBase.GamePlay.EntitiesRegistarion;
+using CodeBase.GamePlay.EntityRegistry;
 using CodeBase.StaticData.Abilities;
 
 namespace CodeBase.GamePlay.Abilities.Targeting

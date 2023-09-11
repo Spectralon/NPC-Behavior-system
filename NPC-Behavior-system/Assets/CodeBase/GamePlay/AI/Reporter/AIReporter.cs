@@ -4,7 +4,7 @@ using System.Linq;
 using CodeBase.GamePlay.AI.Score;
 using CodeBase.GamePlay.AI.Utility;
 using CodeBase.GamePlay.Entities;
-using CodeBase.GamePlay.EntitiesRegistarion;
+using CodeBase.GamePlay.EntityRegistry;
 
 namespace CodeBase.GamePlay.AI.Reporter
 {

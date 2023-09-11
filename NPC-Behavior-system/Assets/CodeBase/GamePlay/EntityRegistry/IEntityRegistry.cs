@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using CodeBase.GamePlay.Entities;
 
-namespace CodeBase.GamePlay.EntitiesRegistarion
+namespace CodeBase.GamePlay.EntityRegistry
 {
     public interface IEntityRegistry
     {

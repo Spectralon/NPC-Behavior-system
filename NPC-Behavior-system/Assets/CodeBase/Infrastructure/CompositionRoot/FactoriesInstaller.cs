@@ -3,7 +3,7 @@ using CodeBase.GamePlay.AI;
 using CodeBase.GamePlay.AI.Reporter;
 using CodeBase.GamePlay.AI.Utility;
 using CodeBase.GamePlay.Death;
-using CodeBase.GamePlay.EntitiesRegistarion;
+using CodeBase.GamePlay.EntityRegistry;
 using CodeBase.GamePlay.Factories.EntityFactory;
 using CodeBase.GamePlay.Stamina;
 using CodeBase.Services.GamePlay.Factory;
@@ -11,7 +11,7 @@ using CodeBase.Services.GamePlay.ResourceLoad;
 using CodeBase.UI.Services.Factory;
 using Zenject;
 
-namespace CodeBase.CompositionRoot
+namespace CodeBase.Infrastructure.CompositionRoot
 {
     public class FactoriesInstaller : MonoInstaller
     {

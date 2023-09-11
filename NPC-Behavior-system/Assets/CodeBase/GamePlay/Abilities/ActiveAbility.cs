@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using CodeBase.StaticData.Abilities;
 
-namespace CodeBase.GamePlay.Battle
+namespace CodeBase.GamePlay.Abilities
 {
     public class ActiveAbility
     {

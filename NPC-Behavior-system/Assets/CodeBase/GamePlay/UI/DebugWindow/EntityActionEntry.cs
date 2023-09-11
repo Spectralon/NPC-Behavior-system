@@ -1,8 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace CodeBase.Gameplay.UI.DebugWindow
+namespace CodeBase.GamePlay.UI.DebugWindow
 {
   public class EntityActionEntry : MonoBehaviour
   {

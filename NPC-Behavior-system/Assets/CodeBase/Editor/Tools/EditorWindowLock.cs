@@ -4,39 +4,42 @@ using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-public class EditorWindowLock
+namespace CodeBase.Editor.Tools
 {
-  private static EditorWindow _activeProject;
-
-  [MenuItem("Hot actions/Toggle Lock %SPACE")]
-  static void ToggleInspectorLock()
+  public class EditorWindowLock
   {
-    ActiveEditorTracker.sharedTracker.isLocked = !ActiveEditorTracker.sharedTracker.isLocked;
-    ActiveEditorTracker.sharedTracker.ForceRebuild();
-  }
+    private static EditorWindow _activeProject;
 
-  [MenuItem("Hot actions/Toggle Project Lock %#SPACE")]
-  static void ToggleProjectLock()
-  {
-    if (_activeProject == null)
+    [MenuItem("Hot actions/Toggle Lock %SPACE")]
+    static void ToggleInspectorLock()
     {
-      Type type = Assembly.GetAssembly(typeof(UnityEditor.Editor)).GetType("UnityEditor.ProjectBrowser");
-      Object[] findObjectsOfTypeAll = Resources.FindObjectsOfTypeAll(type);
-      _activeProject = (EditorWindow) findObjectsOfTypeAll[0];
+      ActiveEditorTracker.sharedTracker.isLocked = !ActiveEditorTracker.sharedTracker.isLocked;
+      ActiveEditorTracker.sharedTracker.ForceRebuild();
     }
 
-    if (_activeProject != null && _activeProject.GetType().Name == "ProjectBrowser")
+    [MenuItem("Hot actions/Toggle Project Lock %#SPACE")]
+    static void ToggleProjectLock()
     {
-      Type type = Assembly.GetAssembly(typeof(UnityEditor.Editor)).GetType("UnityEditor.ProjectBrowser");
-      PropertyInfo propertyInfo = type.GetProperty("isLocked", BindingFlags.Instance |
-                                                               BindingFlags.NonPublic |
-                                                               BindingFlags.Public);
+      if (_activeProject == null)
+      {
+        Type type = Assembly.GetAssembly(typeof(UnityEditor.Editor)).GetType("UnityEditor.ProjectBrowser");
+        Object[] findObjectsOfTypeAll = Resources.FindObjectsOfTypeAll(type);
+        _activeProject = (EditorWindow) findObjectsOfTypeAll[0];
+      }
 
-      bool value = (bool) propertyInfo.GetValue(_activeProject, null);
+      if (_activeProject != null && _activeProject.GetType().Name == "ProjectBrowser")
+      {
+        Type type = Assembly.GetAssembly(typeof(UnityEditor.Editor)).GetType("UnityEditor.ProjectBrowser");
+        PropertyInfo propertyInfo = type.GetProperty("isLocked", BindingFlags.Instance |
+                                                                 BindingFlags.NonPublic |
+                                                                 BindingFlags.Public);
 
-      propertyInfo.SetValue(_activeProject, !value, null);
+        bool value = (bool) propertyInfo.GetValue(_activeProject, null);
 
-      _activeProject.Repaint();
+        propertyInfo.SetValue(_activeProject, !value, null);
+
+        _activeProject.Repaint();
+      }
     }
   }
 }

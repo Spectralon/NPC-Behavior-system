@@ -1,4 +1,4 @@
-using CodeBase.CompositionRoot.SubContainers;
+using CodeBase.Infrastructure.CompositionRoot.SubContainers;
 using CodeBase.Services.General.Ads;
 using CodeBase.Services.General.CustomLogger;
 using CodeBase.Services.General.Disposal;
@@ -11,7 +11,7 @@ using CodeBase.Services.General.SaveLoad;
 using CodeBase.Services.General.StaticData;
 using Zenject;
 
-namespace CodeBase.CompositionRoot
+namespace CodeBase.Infrastructure.CompositionRoot
 {
     public class ServicesInstaller : MonoInstaller
     {

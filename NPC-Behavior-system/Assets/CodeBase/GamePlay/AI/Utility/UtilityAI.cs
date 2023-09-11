@@ -7,7 +7,7 @@ using CodeBase.GamePlay.AI.Reporter;
 using CodeBase.GamePlay.AI.Score;
 using CodeBase.GamePlay.Battle;
 using CodeBase.GamePlay.Entities;
-using CodeBase.GamePlay.EntitiesRegistarion;
+using CodeBase.GamePlay.EntityRegistry;
 using CodeBase.Services.General.StaticData;
 
 namespace CodeBase.GamePlay.AI.Utility

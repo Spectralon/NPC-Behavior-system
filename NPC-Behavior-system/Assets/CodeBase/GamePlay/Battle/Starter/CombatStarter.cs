@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using CodeBase.GamePlay.Battle.Conductor;
 using CodeBase.GamePlay.Entities;
-using CodeBase.GamePlay.EntitiesRegistarion;
+using CodeBase.GamePlay.EntityRegistry;
 using CodeBase.GamePlay.Factories.EntityFactory;
 using CodeBase.StaticData.Entities;
 using Random = UnityEngine.Random;

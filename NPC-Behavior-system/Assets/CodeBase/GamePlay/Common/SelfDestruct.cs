@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CodeBase.Gameplay.Common
+namespace CodeBase.GamePlay.Common
 {
   public class SelfDestruct : MonoBehaviour
   {

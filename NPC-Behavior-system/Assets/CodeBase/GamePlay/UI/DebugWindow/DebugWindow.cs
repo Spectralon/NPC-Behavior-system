@@ -3,11 +3,11 @@ using CodeBase.Extensions;
 using CodeBase.GamePlay.AI.Reporter;
 using CodeBase.GamePlay.Battle;
 using CodeBase.GamePlay.Battle.Conductor;
-using CodeBase.GamePlay.EntitiesRegistarion;
+using CodeBase.GamePlay.EntityRegistry;
 using UnityEngine;
 using Zenject;
 
-namespace CodeBase.Gameplay.UI.DebugWindow
+namespace CodeBase.GamePlay.UI.DebugWindow
 {
   public class DebugWindow : MonoBehaviour
   {

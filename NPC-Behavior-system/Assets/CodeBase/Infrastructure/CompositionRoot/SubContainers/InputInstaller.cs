@@ -2,7 +2,7 @@ using CodeBase.Services.General.Input;
 using UnityEngine;
 using Zenject;
 
-namespace CodeBase.CompositionRoot.SubContainers
+namespace CodeBase.Infrastructure.CompositionRoot.SubContainers
 {
     public class InputInstaller : Installer<InputInstaller>
     {

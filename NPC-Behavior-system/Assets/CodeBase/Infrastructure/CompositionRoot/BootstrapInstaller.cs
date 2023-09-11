@@ -1,8 +1,7 @@
-using CodeBase.CompositionRoot.SubContainers;
 using CodeBase.GamePlay.Abilities.Solver;
-using CodeBase.GamePlay.Battle;
 using CodeBase.GamePlay.Battle.Conductor;
 using CodeBase.GamePlay.Cooldown;
+using CodeBase.Infrastructure.CompositionRoot.SubContainers;
 using CodeBase.Infrastructure.CoroutineAccess;
 using CodeBase.Infrastructure.Curtain;
 using CodeBase.Infrastructure.Loader;
@@ -11,7 +10,7 @@ using CodeBase.StateMachine.Machine;
 using CodeBase.StaticData;
 using Zenject;
 
-namespace CodeBase.CompositionRoot
+namespace CodeBase.Infrastructure.CompositionRoot
 {
     public class BootstrapInstaller : MonoInstaller, IInitializable
     {

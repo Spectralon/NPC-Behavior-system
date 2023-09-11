@@ -1,6 +1,6 @@
 using CodeBase.GamePlay.Battle;
 using CodeBase.GamePlay.Entities;
-using CodeBase.GamePlay.EntitiesRegistarion;
+using CodeBase.GamePlay.EntityRegistry;
 using CodeBase.GamePlay.UI.Text;
 using CodeBase.Services.General.StaticData;
 using CodeBase.StaticData.Abilities;

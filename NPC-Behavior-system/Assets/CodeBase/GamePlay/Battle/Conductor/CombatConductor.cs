@@ -6,7 +6,7 @@ using CodeBase.GamePlay.AI;
 using CodeBase.GamePlay.Cooldown;
 using CodeBase.GamePlay.Death;
 using CodeBase.GamePlay.Entities;
-using CodeBase.GamePlay.EntitiesRegistarion;
+using CodeBase.GamePlay.EntityRegistry;
 using CodeBase.GamePlay.Stamina;
 using CodeBase.StaticData.Abilities;
 using UnityEngine;

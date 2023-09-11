@@ -1,5 +1,5 @@
 using CodeBase.GamePlay.Entities;
-using CodeBase.GamePlay.EntitiesRegistarion;
+using CodeBase.GamePlay.EntityRegistry;
 
 namespace CodeBase.GamePlay.Stamina
 {

@@ -2,7 +2,7 @@ using CodeBase.StateMachine.GameStates;
 using CodeBase.StateMachine.Machine;
 using Zenject;
 
-namespace CodeBase.CompositionRoot.SubContainers
+namespace CodeBase.Infrastructure.CompositionRoot.SubContainers
 {
     public class GameStateMachineInstaller : Installer<GameStateMachineInstaller>
     {

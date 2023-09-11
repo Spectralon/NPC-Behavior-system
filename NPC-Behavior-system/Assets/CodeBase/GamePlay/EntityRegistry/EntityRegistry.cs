@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using CodeBase.GamePlay.Entities;
 
-namespace CodeBase.GamePlay.EntitiesRegistarion
+namespace CodeBase.GamePlay.EntityRegistry
 {
     public class EntityRegistry : IEntityRegistry
     {
